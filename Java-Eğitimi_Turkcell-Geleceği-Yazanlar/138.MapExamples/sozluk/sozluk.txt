@@ -1,0 +1,13 @@
+Araba:Car
+Ev:Home
+Kalem:Pencil
+Hayvan:Animal
+Kedi:Cat
+Köpek:Dog
+Koş:Run
+Yürü:Walk
+Ağaç:Tree
+Kelime:Word
+Anahtar:Key
+Klavye:Keyboard
+Fare:Mouse
