@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class SocketProgramming 
+public class Client 
 {
     private Socket socket = null;
     private DataInputStream input = null;
@@ -14,7 +14,7 @@ public class SocketProgramming
 
     //Bağlantı kurmak için gereken isterler parametre olarak istenir
     //Hata fırlatmalarına karşı throws tanımlamalarını yapıyoruz
-    public SocketProgramming(String ipAddress, int port) throws UnknownHostException, IOException
+    public Client(String ipAddress, int port) throws UnknownHostException, IOException
     {
         //Burada bir obje oluşturuldugu anda bağlantıyı başlatalım
         //Bağlantı Kurmak
