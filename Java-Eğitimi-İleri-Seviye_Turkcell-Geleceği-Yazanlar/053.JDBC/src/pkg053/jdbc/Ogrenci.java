@@ -14,11 +14,11 @@ public class Ogrenci
     public String getAd(){return ad;}
     public String getSoyad(){return soyad;}
     
-    private void setID(int ID){this.ID = ID;}
-    private void setNo(String no){this.no = no;}
-    private void setkAdi(String kAdi){this.kAdi = kAdi;}
-    private void setAd(String ad){this.ad = ad;}
-    private void setSoyad(String soyad){this.soyad = soyad;}
+    public void setID(int ID){this.ID = ID;}
+    public void setNo(String no){this.no = no;}
+    public void setkAdi(String kAdi){this.kAdi = kAdi;}
+    public void setAd(String ad){this.ad = ad;}
+    public void setSoyad(String soyad){this.soyad = soyad;}
     
     public void bilgiVer()
     {
