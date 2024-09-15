@@ -32,9 +32,39 @@ public class Notation extends HttpServlet
                 }
             };
             
+            ArrayList<String> renkler = new ArrayList<>()
+            {
+                {
+                    add("red");
+                    add("blue");
+                    add("green");
+                    add("yellow");
+                }                
+            };
+            
+            String[] stilRenkleri = new String[renkler.size()];
+            stilRenkleri = renkler.toArray(stilRenkleri);
+            //String[] stilRenkleri = renkler.toArray(new String[0]);            
+            int index = 0;
+            
             writer.write("<table>");
-            writer.write("<tr>");   writer.write("TAKIMLAR");   writer.write("</tr>");              
-            for(String takim:takimlarList){writer.write("<tr>");    writer.write("<td>");   writer.write(takim); writer.write("</td>"); writer.write("</tr>");} 
+            
+            writer.write("<th>");
+            writer.write("TAKIMLAR");
+            writer.write("</th>");           
+            
+            for(String takim:takimlarList)
+            {
+                writer.write("<tr>");
+                writer.write("<td style='color:"+stilRenkleri[index++ % stilRenkleri.length]+"'>");
+                //writer.write("<td style='color:"+stilRenkleri[index++]+"'>"); //Problemler çıkabilir renk ve takım sayılarının birbirine eşit olması lazım
+                
+                writer.write(takim);
+                
+                writer.write("</td>");                
+                writer.write("</tr>");
+            } 
+            
             writer.write("</table>");            
         }
 }
