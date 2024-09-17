@@ -1,4 +1,4 @@
-package notationPackage;
+package ToplamaPackage;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -11,7 +11,7 @@ import java.util.List;
 
 @WebServlet(urlPatterns = {"/Anasayfa"}) //Burası anasayfada çalışacak
 
-public class Notation extends HttpServlet
+public class Toplama extends HttpServlet
 {
         @Override
         protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException
