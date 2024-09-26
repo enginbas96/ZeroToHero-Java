@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -6,21 +7,17 @@
     <title>JSP Page</title>
 </head>
 <body>  
-    <!-- Jsp -> java -> class -> servlet object ?eklinde dönü?türülerek gerçekle?tirilir-->
-    <%-- Tire koyulmam?? hali ile java kaynak dolar?n?n yaz?laca?? aland?r <%Kodlar buraya gelir%> --%>
-    <!-- HTML kodlar? bu ?ekilde yorum sat?r?na getirilir -->
-    <%--    
-            scriplet <% java kaynak kodlar? %>
-            expression <%= durumlar %>
-            declaration <%! de?i?ken veya metot tan?mlamalar? için kullan?l?r %>    
-    --%>
-    
     <h1 style = "color:red;">JAVA DERSLERI</h1>
+    
     <%
-        final float PI = 3.14159f;
-        out.println("Math icindeki PI sayisi: " + Math.PI);    
-        out.println("<br>"); //Buras? çok önemli
-        out.println("Benim tanimladigim PI sayisi: " + PI);  
+        int sayi1 = 20;
+        int sayi2 = 30;
+        int sonuc = sayi1 + sayi2;
+        out.println("Toplama = " + sonuc + "<br>");
+        out.println("C?karma = " + (sayi1 - sayi2) + "<br>");
+        out.println("Carpma = " + (sayi1 * sayi2) + "<br>");
+        out.println("Bolme = " + ((float)sayi1 / sayi2) + "<br>");
     %>
+    
 </body>
 </html>
