@@ -7,6 +7,6 @@
     <title>JSP Page</title>
 </head>
 <body>    
-    OFFDAY 2
+    OFFDAY LAST
 </body>
 </html>
