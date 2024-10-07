@@ -1,5 +1,3 @@
-<%@page import = "java.util.Date"  %>
-<%@page import = "java.text.SimpleDateFormat"  %>
 <%@page pageEncoding="UTF-8" contentType="text/html" %>
 
 <!DOCTYPE html>
@@ -10,11 +8,9 @@
 </head>
 <body>    
     
-    <%
-            Busy4
-
-    %>
     
-    <-------------------------------------------------------------------------------------------->
+    <jsp:include page="bilgi.html" ></jsp:include>
+    
+    
 </body>
 </html>
