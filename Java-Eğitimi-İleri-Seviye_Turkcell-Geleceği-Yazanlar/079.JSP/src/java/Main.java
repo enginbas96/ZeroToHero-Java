@@ -1,4 +1,3 @@
-
 import bean.pojo.Ogrenci;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebServlet;
@@ -13,7 +12,6 @@ public class Main extends HttpServlet
     {        
         Ogrenci ogrenci = new Ogrenci("142536", "Mehmet", "BAS", 12, 'A');
         req.setAttribute("ogrenci", ogrenci);
-        
         RequestDispatcher dispatcher = req.getRequestDispatcher("jspUseBean/ogrenciler.jsp");
         dispatcher.forward(req, resp);
     }
