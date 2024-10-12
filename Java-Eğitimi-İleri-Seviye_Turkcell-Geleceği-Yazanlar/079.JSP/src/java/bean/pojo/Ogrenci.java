@@ -1,5 +1,5 @@
 package bean.pojo;
-public class Ogrenci
+public abstract class Ogrenci //Bu sınıfı abstact yaparak bu sınıftan nesne oluşumunu engellemiş oluyoruz
 {
     private String no;
     private String ad;
