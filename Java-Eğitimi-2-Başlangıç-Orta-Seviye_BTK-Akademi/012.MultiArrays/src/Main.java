@@ -7,7 +7,7 @@ public class Main
         {
             for(int j = 0; j<3; j++)
             {
-                matris[i][j] = i + ". satır, " + j + ". stun   |";
+                matris[i][j] = i + ". satır, " + j + ". stun  |";
             }
         }
         System.out.println("---------------------------------------------------------------------");
