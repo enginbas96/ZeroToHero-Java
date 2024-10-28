@@ -7,7 +7,6 @@ public class Main
         ogretmenKrediManager.Hesapla();
         */
 
-
         KrediUI krediUI = new KrediUI();
         krediUI.KrediHesapla(new OgretmenKrediManager());
         krediUI.KrediHesapla(new TarimKrediManager());
