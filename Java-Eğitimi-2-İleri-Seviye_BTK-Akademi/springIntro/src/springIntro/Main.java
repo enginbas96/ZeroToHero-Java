@@ -1,14 +1,30 @@
 package springIntro;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Main 
 {
 	public static void main(String[] args) 
 	{
-		CustomerManager customerManager = new CustomerManager(new CustomerDAL());
-		customerManager.add();
 		
-		CustomerManager customerManager2 = new CustomerManager(new MySqlCustomerDAL());
-		customerManager2.add();
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		
+		ICustomerService customerService = context.getBean("service",ICustomerService.class);		
+		customerService.add();
+		
+		
+		///CustomerManager customerManager = new CustomerManager(context.getBean("database",ICustomerDAL.class));
+		///customerManager.add();
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
 

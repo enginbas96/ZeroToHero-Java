@@ -1,6 +1,6 @@
 package springIntro;
 
-public class CustomerManager 
+public class CustomerManager implements ICustomerService
 {
 	private ICustomerDAL customerDAL;
 	
@@ -9,7 +9,7 @@ public class CustomerManager
 		this.customerDAL = customerDAL;
 	}
 
-
+	@Override
 	public void add() 
 	{
 		customerDAL.add();
